@@ -1,0 +1,40 @@
+{
+    "teclados": [
+      {
+        "name": "Shoyu",
+        "wood": "Roble",
+        "price": 100,
+        "size": 70,
+        "assembly": "Atornillado"
+      },
+      {
+        "name": "Tonkotsu",
+        "wood": "Nogal",
+        "price": 150,
+        "size": 60,
+        "assembly": "Bluetooth"
+      },
+      {
+        "name": "Nobu",
+        "wood": "Pino",
+        "price": 80,
+        "size": 65,
+        "assembly": "Cableado"
+      },
+      {
+        "name": "Shabito",
+        "wood": "Arce",
+        "price": 200,
+        "size": 100,
+        "assembly": "Mecánico"
+      },
+      {
+        "name": "Mogu",
+        "wood": "Haya",
+        "price": 180,
+        "size": 100,
+        "assembly": "Inalámbrico"
+      }
+    ]
+  }
+  
