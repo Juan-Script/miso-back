@@ -77,6 +77,33 @@ const productsControllers = {
       });
     }
   },
+
+  updateProduct: async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const editProduct: ProductInt = {
+        name: req.body.name,
+        wood: req.body.wood,
+        price: req.body.price,
+        size: req.body.size,
+        assembly: req.body.assembly,
+      };
+
+      await Products.findOneAndUpdate(
+        { _id: req.params.id },
+        editProduct
+      ).catch((e) => next(e));
+
+      res.json({
+        message: `Product update successfully`,
+        data: editProduct,
+      });
+    } catch (error) {
+      res.json({
+        messages: "Error en el Servidor",
+        error: error,
+      });
+    }
+  },
 };
 
 export default productsControllers;

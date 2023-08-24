@@ -4,8 +4,8 @@ const router = express.Router();
 
 router.get("/", (_req, res) => {
   res.json({
-    message: "Welcome to Miso Woods",
-    author: "JuanCoder",
+    message: "Welcome to the BackEnd of Miso Woods",
+    author: "Created by JuanCoder",
   });
 });
 
